@@ -1,8 +1,8 @@
 #! /bin/bash
 #SBATCH -A p31865               # Allocation
 #SBATCH -p normal                # Queue
-#SBATCH --array=20            # Job array from 0 to 9
-#SBATCH -t 4:00:00             # Walltime/duration of the job
+#SBATCH --array=0-24             # Job array from 0 to 9
+#SBATCH -t 24:00:00             # Walltime/duration of the job
 #SBATCH --ntasks=400
 #SBATCH --mem-per-cpu=1G               # Memory per node in GB needed for a job. Also see --mem-per-cpu
 #SBATCH --mail-type=ALL
